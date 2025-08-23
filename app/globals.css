@@ -25,21 +25,28 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@theme {
-  --animate-sf-drift-1: sf-drift-1 180s linear infinite;
-  --animate-sf-drift-2: sf-drift-2 140s linear infinite;
-  --animate-sf-drift-3: sf-drift-3 110s linear infinite;
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+.twinkle {
+  animation: twinkle 3.6s ease-in-out infinite;
+}
 
-  @keyframes sf-drift-1 {
-    0%   { mask-position: 0 0; -webkit-mask-position: 0 0; }
-    100% { mask-position: 600px 0; -webkit-mask-position: 600px 0; }
+@keyframes breathe {
+  0%,
+  100% {
+    opacity: 0.8;
   }
-  @keyframes sf-drift-2 {
-    0%   { mask-position: 0 0; -webkit-mask-position: 0 0; }
-    100% { mask-position: 800px 0; -webkit-mask-position: 800px 0; }
+  50% {
+    opacity: 1;
   }
-  @keyframes sf-drift-3 {
-    0%   { mask-position: 0 0; -webkit-mask-position: 0 0; }
-    100% { mask-position: 1000px 0; -webkit-mask-position: 1000px 0; }
-  }
+}
+.nebula-alive {
+  animation: breathe 12s ease-in-out infinite;
 }

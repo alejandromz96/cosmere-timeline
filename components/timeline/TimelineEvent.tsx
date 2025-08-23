@@ -2,7 +2,7 @@
 import { useState, useEffect, type FC } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { X } from 'lucide-react'
-import { type CosmereEvent } from '@/types/common'
+import { type CosmereEvent } from '@/types/cosmere'
 
 type TimelineEventProps = {
   eventInfo: CosmereEvent

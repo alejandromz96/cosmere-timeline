@@ -204,7 +204,7 @@ export default function StarParallax() {
 
           {/* Twinkle keyframes (scoped) */}
           <style>{`
-            @keyframes twinkle { 0% { opacity: 0.25 } 50% { opacity: 0.6 } 100% { opacity: 0.25 } }
+            @keyframes twinkle { 0% { opacity: 0.8 } 50% { opacity: 0.25 } 100% { opacity: 0.8 } }
             .twinkle { animation: twinkle 3.6s ease-in-out infinite; animation-delay: 0.3s; filter: drop-shadow(0 0 3px rgba(255,255,255,0.35)); }
           `}</style>
         </>

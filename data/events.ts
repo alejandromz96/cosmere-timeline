@@ -1,4 +1,4 @@
-import type { CosmereEvent } from "@/types/common";
+import type { CosmereEvent } from "@/types/cosmere";
 
 export const cosmereEvents: CosmereEvent[] = [
   {

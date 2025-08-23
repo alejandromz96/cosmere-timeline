@@ -5,8 +5,8 @@ import { type PropsWithChildren } from "react";
 const CosmereLayout = ({ children }: PropsWithChildren) => {
   return (
     <>
-      {/* <Starfield /> */}
-      <StarParallax />
+      <Starfield />
+      {/* <StarParallax /> */}
       <main className="relative z-10">{children}</main>
     </>
   );
